@@ -34,7 +34,6 @@ function isFileTypeSupported(type , supportedTypes){
     return supportedTypes.includes(type);
 }
 
-//Uploading the file on the cloudinary
 async function uploadFileToCloudinary(file , folder , quality){
     const options = {folder};
     if(quality){
@@ -106,9 +105,6 @@ exports.imageUpload = async (req , res) => {
     }
 
 }
-
-
-//Lets test and run the login functionality app by creating the entry in the router
 
 exports.videoUpload = async (req , res) => {
     try{
